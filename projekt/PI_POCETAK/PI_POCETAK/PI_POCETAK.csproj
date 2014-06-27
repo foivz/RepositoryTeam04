@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F0F1346-0124-4ED6-AAF6-6411B41715CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PI_POCETAK</RootNamespace>
+    <AssemblyName>PI_POCETAK</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Prijava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prijava.Designer.cs">
+      <DependentUpon>Prijava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\artikli.cs">
+      <DependentUpon>TiskaraDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\izdatnica.cs">
+      <DependentUpon>TiskaraDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\korisnici.cs">
+      <DependentUpon>TiskaraDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\narudzbenica.cs">
+      <DependentUpon>TiskaraDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\oprema.cs">
+      <DependentUpon>TiskaraDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\poslovni_partner.cs">
+      <DependentUpon>TiskaraDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\primka.cs">
+      <DependentUpon>TiskaraDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\racun.cs">
+      <DependentUpon>TiskaraDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\stavke_izdatnice.cs">
+      <DependentUpon>TiskaraDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\stavke_narudzbenice.cs">
+      <DependentUpon>TiskaraDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\stavke_primke.cs">
+      <DependentUpon>TiskaraDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\stavke_racuna.cs">
+      <DependentUpon>TiskaraDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TiskaraDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TiskaraDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TiskaraDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TiskaraDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TiskaraDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TiskaraDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vrsta_artikla.cs">
+      <DependentUpon>TiskaraDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TiskaraNET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TiskaraNET.Designer.cs">
+      <DependentUpon>TiskaraNET.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Prijava.resx">
+      <DependentUpon>Prijava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="Model\TiskaraDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TiskaraDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\TiskaraDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TiskaraDB.edmx</DependentUpon>
+      <LastGenOutput>TiskaraDB.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Model\TiskaraDB.edmx.diagram">
+      <DependentUpon>TiskaraDB.edmx</DependentUpon>
+    </None>
+    <None Include="Model\TiskaraDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TiskaraDB.edmx</DependentUpon>
+      <LastGenOutput>TiskaraDB.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\PI_POCETAK.Model.tiskaraNETEntities.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
