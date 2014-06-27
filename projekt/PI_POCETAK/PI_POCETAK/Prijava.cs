@@ -42,17 +42,18 @@ namespace PI_POCETAK
                 {
                     if (item.lozinka.Equals(lozinka))
                     {
-                        this.Hide();
                         TiskaraNET forma = new TiskaraNET();
                         forma.Show();
+                        this.Hide();
                         break;
 
                     }
+                    else
+                    {
+                        MessageBox.Show("Unesli ste krivi mail ili krivu lozinku!");
+                    }
                 }
-                else 
-                {
-                    MessageBox.Show("Unesli ste krivi mail ili krivu lozinku!");
-                }
+                
             }
 
         }

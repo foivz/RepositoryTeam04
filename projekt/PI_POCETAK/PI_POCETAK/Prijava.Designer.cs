@@ -64,6 +64,7 @@
             // 
             this.txtLozinka.Location = new System.Drawing.Point(110, 55);
             this.txtLozinka.Name = "txtLozinka";
+            this.txtLozinka.PasswordChar = '*';
             this.txtLozinka.Size = new System.Drawing.Size(154, 20);
             this.txtLozinka.TabIndex = 3;
             // 
