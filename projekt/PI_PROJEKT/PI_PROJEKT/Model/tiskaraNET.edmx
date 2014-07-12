@@ -1,0 +1,993 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="tiskaraNETModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="tiskaraNETModelStoreContainer">
+          <EntitySet Name="artikli" EntityType="tiskaraNETModel.Store.artikli" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="izdatnica" EntityType="tiskaraNETModel.Store.izdatnica" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="korisnici" EntityType="tiskaraNETModel.Store.korisnici" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="narudzbenica" EntityType="tiskaraNETModel.Store.narudzbenica" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="oprema" EntityType="tiskaraNETModel.Store.oprema" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="poslovni_partner" EntityType="tiskaraNETModel.Store.poslovni_partner" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="primka" EntityType="tiskaraNETModel.Store.primka" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="racun" EntityType="tiskaraNETModel.Store.racun" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="stavke_izdatnice" EntityType="tiskaraNETModel.Store.stavke_izdatnice" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="stavke_narudzbenice" EntityType="tiskaraNETModel.Store.stavke_narudzbenice" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="stavke_primke" EntityType="tiskaraNETModel.Store.stavke_primke" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="stavke_racuna" EntityType="tiskaraNETModel.Store.stavke_racuna" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="vrsta_artikla" EntityType="tiskaraNETModel.Store.vrsta_artikla" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__artikli__id_vrst__145C0A3F" Association="tiskaraNETModel.Store.FK__artikli__id_vrst__145C0A3F">
+            <End Role="vrsta_artikla" EntitySet="vrsta_artikla" />
+            <End Role="artikli" EntitySet="artikli" />
+          </AssociationSet>
+          <AssociationSet Name="FK__izdatnica__id_ko__1920BF5C" Association="tiskaraNETModel.Store.FK__izdatnica__id_ko__1920BF5C">
+            <End Role="korisnici" EntitySet="korisnici" />
+            <End Role="izdatnica" EntitySet="izdatnica" />
+          </AssociationSet>
+          <AssociationSet Name="FK__narudzben__id_ko__267ABA7A" Association="tiskaraNETModel.Store.FK__narudzben__id_ko__267ABA7A">
+            <End Role="korisnici" EntitySet="korisnici" />
+            <End Role="narudzbenica" EntitySet="narudzbenica" />
+          </AssociationSet>
+          <AssociationSet Name="FK__narudzben__id_po__276EDEB3" Association="tiskaraNETModel.Store.FK__narudzben__id_po__276EDEB3">
+            <End Role="poslovni_partner" EntitySet="poslovni_partner" />
+            <End Role="narudzbenica" EntitySet="narudzbenica" />
+          </AssociationSet>
+          <AssociationSet Name="FK__primka__id_koris__1ED998B2" Association="tiskaraNETModel.Store.FK__primka__id_koris__1ED998B2">
+            <End Role="korisnici" EntitySet="korisnici" />
+            <End Role="primka" EntitySet="primka" />
+          </AssociationSet>
+          <AssociationSet Name="FK__racun__id_korisn__2D27B809" Association="tiskaraNETModel.Store.FK__racun__id_korisn__2D27B809">
+            <End Role="korisnici" EntitySet="korisnici" />
+            <End Role="racun" EntitySet="racun" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_iz__id_ar__1BFD2C07" Association="tiskaraNETModel.Store.FK__stavke_iz__id_ar__1BFD2C07">
+            <End Role="artikli" EntitySet="artikli" />
+            <End Role="stavke_izdatnice" EntitySet="stavke_izdatnice" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_iz__id_iz__1B0907CE" Association="tiskaraNETModel.Store.FK__stavke_iz__id_iz__1B0907CE">
+            <End Role="izdatnica" EntitySet="izdatnica" />
+            <End Role="stavke_izdatnice" EntitySet="stavke_izdatnice" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_na__id_ar__2A4B4B5E" Association="tiskaraNETModel.Store.FK__stavke_na__id_ar__2A4B4B5E">
+            <End Role="artikli" EntitySet="artikli" />
+            <End Role="stavke_narudzbenice" EntitySet="stavke_narudzbenice" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_na__id_na__29572725" Association="tiskaraNETModel.Store.FK__stavke_na__id_na__29572725">
+            <End Role="narudzbenica" EntitySet="narudzbenica" />
+            <End Role="stavke_narudzbenice" EntitySet="stavke_narudzbenice" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_pr__id_ar__21B6055D" Association="tiskaraNETModel.Store.FK__stavke_pr__id_ar__21B6055D">
+            <End Role="artikli" EntitySet="artikli" />
+            <End Role="stavke_primke" EntitySet="stavke_primke" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_pr__id_pr__20C1E124" Association="tiskaraNETModel.Store.FK__stavke_pr__id_pr__20C1E124">
+            <End Role="primka" EntitySet="primka" />
+            <End Role="stavke_primke" EntitySet="stavke_primke" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_ra__id_ar__300424B4" Association="tiskaraNETModel.Store.FK__stavke_ra__id_ar__300424B4">
+            <End Role="artikli" EntitySet="artikli" />
+            <End Role="stavke_racuna" EntitySet="stavke_racuna" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_ra__id_ra__2F10007B" Association="tiskaraNETModel.Store.FK__stavke_ra__id_ra__2F10007B">
+            <End Role="racun" EntitySet="racun" />
+            <End Role="stavke_racuna" EntitySet="stavke_racuna" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="artikli">
+          <Key>
+            <PropertyRef Name="id_artikli" />
+          </Key>
+          <Property Name="id_artikli" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="naziv" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="kolicina" Type="int" Nullable="false" />
+          <Property Name="id_vrsta_artikla" Type="int" />
+          <Property Name="cijena" Type="decimal" Scale="2" />
+          <Property Name="optimalna" Type="int" />
+        </EntityType>
+        <EntityType Name="izdatnica">
+          <Key>
+            <PropertyRef Name="id_izdatnica" />
+          </Key>
+          <Property Name="id_izdatnica" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="datum" Type="datetime" Nullable="false" />
+          <Property Name="id_korisnik" Type="int" />
+          <Property Name="izdaje" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="korisnici">
+          <Key>
+            <PropertyRef Name="id_korisnik" />
+          </Key>
+          <Property Name="id_korisnik" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ime" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="prezime" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="lozinka" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="ziro_racun" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="tel_broj" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="korisnicko_ime" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="status" Type="int" />
+        </EntityType>
+        <EntityType Name="narudzbenica">
+          <Key>
+            <PropertyRef Name="id_narudzbenica" />
+          </Key>
+          <Property Name="id_narudzbenica" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="datum" Type="datetime" Nullable="false" />
+          <Property Name="id_korisnik" Type="int" />
+          <Property Name="id_poslovni_partner" Type="int" />
+          <Property Name="izdaje" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="oprema">
+          <Key>
+            <PropertyRef Name="id_oprema" />
+          </Key>
+          <Property Name="id_oprema" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="naziv" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="opis" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="poslovni_partner">
+          <Key>
+            <PropertyRef Name="id_poslovni_partner" />
+          </Key>
+          <Property Name="id_poslovni_partner" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="naziv" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="ziro_racun" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="tel_broj" Type="varchar" MaxLength="45" />
+          <Property Name="email" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="primka">
+          <Key>
+            <PropertyRef Name="id_primka" />
+          </Key>
+          <Property Name="id_primka" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="datum" Type="datetime" Nullable="false" />
+          <Property Name="id_korisnik" Type="int" />
+          <Property Name="izdaje" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="racun">
+          <Key>
+            <PropertyRef Name="id_racun" />
+          </Key>
+          <Property Name="id_racun" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="datum" Type="datetime" Nullable="false" />
+          <Property Name="id_korisnik" Type="int" />
+          <Property Name="izdaje" Type="varchar" MaxLength="50" />
+          <Property Name="imePrezimeKupca" Type="varchar" MaxLength="50" />
+          <Property Name="adresaKupca" Type="varchar" MaxLength="50" />
+          <Property Name="oibKupca" Type="varchar" MaxLength="15" />
+          <Property Name="iznos" Type="decimal" Scale="2" />
+        </EntityType>
+        <EntityType Name="stavke_izdatnice">
+          <Key>
+            <PropertyRef Name="id_izdatnica" />
+            <PropertyRef Name="id_artikli" />
+          </Key>
+          <Property Name="id_izdatnica" Type="int" Nullable="false" />
+          <Property Name="id_artikli" Type="int" Nullable="false" />
+          <Property Name="kolicina" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="stavke_narudzbenice">
+          <Key>
+            <PropertyRef Name="id_narudzbenica" />
+            <PropertyRef Name="id_artikli" />
+          </Key>
+          <Property Name="id_narudzbenica" Type="int" Nullable="false" />
+          <Property Name="id_artikli" Type="int" Nullable="false" />
+          <Property Name="kolicina" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="stavke_primke">
+          <Key>
+            <PropertyRef Name="id_primka" />
+            <PropertyRef Name="id_artikli" />
+          </Key>
+          <Property Name="id_primka" Type="int" Nullable="false" />
+          <Property Name="id_artikli" Type="int" Nullable="false" />
+          <Property Name="kolicina" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="stavke_racuna">
+          <Key>
+            <PropertyRef Name="id_racun" />
+            <PropertyRef Name="id_artikli" />
+          </Key>
+          <Property Name="id_racun" Type="int" Nullable="false" />
+          <Property Name="id_artikli" Type="int" Nullable="false" />
+          <Property Name="kolicina" Type="int" Nullable="false" />
+          <Property Name="popust" Type="int" />
+        </EntityType>
+        <EntityType Name="vrsta_artikla">
+          <Key>
+            <PropertyRef Name="id_vrsta_artikla" />
+          </Key>
+          <Property Name="id_vrsta_artikla" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="naziv" Type="varchar" Nullable="false" MaxLength="45" />
+        </EntityType>
+        <Association Name="FK__artikli__id_vrst__145C0A3F">
+          <End Role="vrsta_artikla" Type="tiskaraNETModel.Store.vrsta_artikla" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="artikli" Type="tiskaraNETModel.Store.artikli" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="vrsta_artikla">
+              <PropertyRef Name="id_vrsta_artikla" />
+            </Principal>
+            <Dependent Role="artikli">
+              <PropertyRef Name="id_vrsta_artikla" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__izdatnica__id_ko__1920BF5C">
+          <End Role="korisnici" Type="tiskaraNETModel.Store.korisnici" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="izdatnica" Type="tiskaraNETModel.Store.izdatnica" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="korisnici">
+              <PropertyRef Name="id_korisnik" />
+            </Principal>
+            <Dependent Role="izdatnica">
+              <PropertyRef Name="id_korisnik" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__narudzben__id_ko__267ABA7A">
+          <End Role="korisnici" Type="tiskaraNETModel.Store.korisnici" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="narudzbenica" Type="tiskaraNETModel.Store.narudzbenica" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="korisnici">
+              <PropertyRef Name="id_korisnik" />
+            </Principal>
+            <Dependent Role="narudzbenica">
+              <PropertyRef Name="id_korisnik" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__narudzben__id_po__276EDEB3">
+          <End Role="poslovni_partner" Type="tiskaraNETModel.Store.poslovni_partner" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="narudzbenica" Type="tiskaraNETModel.Store.narudzbenica" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="poslovni_partner">
+              <PropertyRef Name="id_poslovni_partner" />
+            </Principal>
+            <Dependent Role="narudzbenica">
+              <PropertyRef Name="id_poslovni_partner" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__primka__id_koris__1ED998B2">
+          <End Role="korisnici" Type="tiskaraNETModel.Store.korisnici" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="primka" Type="tiskaraNETModel.Store.primka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="korisnici">
+              <PropertyRef Name="id_korisnik" />
+            </Principal>
+            <Dependent Role="primka">
+              <PropertyRef Name="id_korisnik" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__racun__id_korisn__2D27B809">
+          <End Role="korisnici" Type="tiskaraNETModel.Store.korisnici" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="racun" Type="tiskaraNETModel.Store.racun" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="korisnici">
+              <PropertyRef Name="id_korisnik" />
+            </Principal>
+            <Dependent Role="racun">
+              <PropertyRef Name="id_korisnik" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_iz__id_ar__1BFD2C07">
+          <End Role="artikli" Type="tiskaraNETModel.Store.artikli" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_izdatnice" Type="tiskaraNETModel.Store.stavke_izdatnice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="artikli">
+              <PropertyRef Name="id_artikli" />
+            </Principal>
+            <Dependent Role="stavke_izdatnice">
+              <PropertyRef Name="id_artikli" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_iz__id_iz__1B0907CE">
+          <End Role="izdatnica" Type="tiskaraNETModel.Store.izdatnica" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_izdatnice" Type="tiskaraNETModel.Store.stavke_izdatnice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="izdatnica">
+              <PropertyRef Name="id_izdatnica" />
+            </Principal>
+            <Dependent Role="stavke_izdatnice">
+              <PropertyRef Name="id_izdatnica" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_na__id_ar__2A4B4B5E">
+          <End Role="artikli" Type="tiskaraNETModel.Store.artikli" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_narudzbenice" Type="tiskaraNETModel.Store.stavke_narudzbenice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="artikli">
+              <PropertyRef Name="id_artikli" />
+            </Principal>
+            <Dependent Role="stavke_narudzbenice">
+              <PropertyRef Name="id_artikli" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_na__id_na__29572725">
+          <End Role="narudzbenica" Type="tiskaraNETModel.Store.narudzbenica" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_narudzbenice" Type="tiskaraNETModel.Store.stavke_narudzbenice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="narudzbenica">
+              <PropertyRef Name="id_narudzbenica" />
+            </Principal>
+            <Dependent Role="stavke_narudzbenice">
+              <PropertyRef Name="id_narudzbenica" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_pr__id_ar__21B6055D">
+          <End Role="artikli" Type="tiskaraNETModel.Store.artikli" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_primke" Type="tiskaraNETModel.Store.stavke_primke" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="artikli">
+              <PropertyRef Name="id_artikli" />
+            </Principal>
+            <Dependent Role="stavke_primke">
+              <PropertyRef Name="id_artikli" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_pr__id_pr__20C1E124">
+          <End Role="primka" Type="tiskaraNETModel.Store.primka" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_primke" Type="tiskaraNETModel.Store.stavke_primke" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="primka">
+              <PropertyRef Name="id_primka" />
+            </Principal>
+            <Dependent Role="stavke_primke">
+              <PropertyRef Name="id_primka" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_ra__id_ar__300424B4">
+          <End Role="artikli" Type="tiskaraNETModel.Store.artikli" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_racuna" Type="tiskaraNETModel.Store.stavke_racuna" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="artikli">
+              <PropertyRef Name="id_artikli" />
+            </Principal>
+            <Dependent Role="stavke_racuna">
+              <PropertyRef Name="id_artikli" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_ra__id_ra__2F10007B">
+          <End Role="racun" Type="tiskaraNETModel.Store.racun" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_racuna" Type="tiskaraNETModel.Store.stavke_racuna" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="racun">
+              <PropertyRef Name="id_racun" />
+            </Principal>
+            <Dependent Role="stavke_racuna">
+              <PropertyRef Name="id_racun" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="tiskaraNETModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="tiskaraNETEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="artikli" EntityType="tiskaraNETModel.artikli" />
+          <EntitySet Name="izdatnica" EntityType="tiskaraNETModel.izdatnica" />
+          <EntitySet Name="korisnici" EntityType="tiskaraNETModel.korisnici" />
+          <EntitySet Name="narudzbenica" EntityType="tiskaraNETModel.narudzbenica" />
+          <EntitySet Name="oprema" EntityType="tiskaraNETModel.oprema" />
+          <EntitySet Name="poslovni_partner" EntityType="tiskaraNETModel.poslovni_partner" />
+          <EntitySet Name="primka" EntityType="tiskaraNETModel.primka" />
+          <EntitySet Name="racun" EntityType="tiskaraNETModel.racun" />
+          <EntitySet Name="stavke_izdatnice" EntityType="tiskaraNETModel.stavke_izdatnice" />
+          <EntitySet Name="stavke_narudzbenice" EntityType="tiskaraNETModel.stavke_narudzbenice" />
+          <EntitySet Name="stavke_primke" EntityType="tiskaraNETModel.stavke_primke" />
+          <EntitySet Name="stavke_racuna" EntityType="tiskaraNETModel.stavke_racuna" />
+          <EntitySet Name="vrsta_artikla" EntityType="tiskaraNETModel.vrsta_artikla" />
+          <AssociationSet Name="FK__artikli__id_vrst__145C0A3F" Association="tiskaraNETModel.FK__artikli__id_vrst__145C0A3F">
+            <End Role="vrsta_artikla" EntitySet="vrsta_artikla" />
+            <End Role="artikli" EntitySet="artikli" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_iz__id_ar__1BFD2C07" Association="tiskaraNETModel.FK__stavke_iz__id_ar__1BFD2C07">
+            <End Role="artikli" EntitySet="artikli" />
+            <End Role="stavke_izdatnice" EntitySet="stavke_izdatnice" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_na__id_ar__2A4B4B5E" Association="tiskaraNETModel.FK__stavke_na__id_ar__2A4B4B5E">
+            <End Role="artikli" EntitySet="artikli" />
+            <End Role="stavke_narudzbenice" EntitySet="stavke_narudzbenice" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_pr__id_ar__21B6055D" Association="tiskaraNETModel.FK__stavke_pr__id_ar__21B6055D">
+            <End Role="artikli" EntitySet="artikli" />
+            <End Role="stavke_primke" EntitySet="stavke_primke" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_ra__id_ar__300424B4" Association="tiskaraNETModel.FK__stavke_ra__id_ar__300424B4">
+            <End Role="artikli" EntitySet="artikli" />
+            <End Role="stavke_racuna" EntitySet="stavke_racuna" />
+          </AssociationSet>
+          <AssociationSet Name="FK__izdatnica__id_ko__1920BF5C" Association="tiskaraNETModel.FK__izdatnica__id_ko__1920BF5C">
+            <End Role="korisnici" EntitySet="korisnici" />
+            <End Role="izdatnica" EntitySet="izdatnica" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_iz__id_iz__1B0907CE" Association="tiskaraNETModel.FK__stavke_iz__id_iz__1B0907CE">
+            <End Role="izdatnica" EntitySet="izdatnica" />
+            <End Role="stavke_izdatnice" EntitySet="stavke_izdatnice" />
+          </AssociationSet>
+          <AssociationSet Name="FK__narudzben__id_ko__267ABA7A" Association="tiskaraNETModel.FK__narudzben__id_ko__267ABA7A">
+            <End Role="korisnici" EntitySet="korisnici" />
+            <End Role="narudzbenica" EntitySet="narudzbenica" />
+          </AssociationSet>
+          <AssociationSet Name="FK__primka__id_koris__1ED998B2" Association="tiskaraNETModel.FK__primka__id_koris__1ED998B2">
+            <End Role="korisnici" EntitySet="korisnici" />
+            <End Role="primka" EntitySet="primka" />
+          </AssociationSet>
+          <AssociationSet Name="FK__racun__id_korisn__2D27B809" Association="tiskaraNETModel.FK__racun__id_korisn__2D27B809">
+            <End Role="korisnici" EntitySet="korisnici" />
+            <End Role="racun" EntitySet="racun" />
+          </AssociationSet>
+          <AssociationSet Name="FK__narudzben__id_po__276EDEB3" Association="tiskaraNETModel.FK__narudzben__id_po__276EDEB3">
+            <End Role="poslovni_partner" EntitySet="poslovni_partner" />
+            <End Role="narudzbenica" EntitySet="narudzbenica" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_na__id_na__29572725" Association="tiskaraNETModel.FK__stavke_na__id_na__29572725">
+            <End Role="narudzbenica" EntitySet="narudzbenica" />
+            <End Role="stavke_narudzbenice" EntitySet="stavke_narudzbenice" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_pr__id_pr__20C1E124" Association="tiskaraNETModel.FK__stavke_pr__id_pr__20C1E124">
+            <End Role="primka" EntitySet="primka" />
+            <End Role="stavke_primke" EntitySet="stavke_primke" />
+          </AssociationSet>
+          <AssociationSet Name="FK__stavke_ra__id_ra__2F10007B" Association="tiskaraNETModel.FK__stavke_ra__id_ra__2F10007B">
+            <End Role="racun" EntitySet="racun" />
+            <End Role="stavke_racuna" EntitySet="stavke_racuna" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="artikli">
+          <Key>
+            <PropertyRef Name="id_artikli" />
+          </Key>
+          <Property Name="id_artikli" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="naziv" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="kolicina" Type="Int32" Nullable="false" />
+          <Property Name="id_vrsta_artikla" Type="Int32" />
+          <Property Name="cijena" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="optimalna" Type="Int32" />
+          <NavigationProperty Name="vrsta_artikla" Relationship="tiskaraNETModel.FK__artikli__id_vrst__145C0A3F" FromRole="artikli" ToRole="vrsta_artikla" />
+          <NavigationProperty Name="stavke_izdatnice" Relationship="tiskaraNETModel.FK__stavke_iz__id_ar__1BFD2C07" FromRole="artikli" ToRole="stavke_izdatnice" />
+          <NavigationProperty Name="stavke_narudzbenice" Relationship="tiskaraNETModel.FK__stavke_na__id_ar__2A4B4B5E" FromRole="artikli" ToRole="stavke_narudzbenice" />
+          <NavigationProperty Name="stavke_primke" Relationship="tiskaraNETModel.FK__stavke_pr__id_ar__21B6055D" FromRole="artikli" ToRole="stavke_primke" />
+          <NavigationProperty Name="stavke_racuna" Relationship="tiskaraNETModel.FK__stavke_ra__id_ar__300424B4" FromRole="artikli" ToRole="stavke_racuna" />
+        </EntityType>
+        <EntityType Name="izdatnica">
+          <Key>
+            <PropertyRef Name="id_izdatnica" />
+          </Key>
+          <Property Name="id_izdatnica" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="datum" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="id_korisnik" Type="Int32" />
+          <Property Name="izdaje" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="korisnici" Relationship="tiskaraNETModel.FK__izdatnica__id_ko__1920BF5C" FromRole="izdatnica" ToRole="korisnici" />
+          <NavigationProperty Name="stavke_izdatnice" Relationship="tiskaraNETModel.FK__stavke_iz__id_iz__1B0907CE" FromRole="izdatnica" ToRole="stavke_izdatnice" />
+        </EntityType>
+        <EntityType Name="korisnici">
+          <Key>
+            <PropertyRef Name="id_korisnik" />
+          </Key>
+          <Property Name="id_korisnik" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ime" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="prezime" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="lozinka" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="ziro_racun" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="tel_broj" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="korisnicko_ime" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="status" Type="Int32" />
+          <NavigationProperty Name="izdatnica" Relationship="tiskaraNETModel.FK__izdatnica__id_ko__1920BF5C" FromRole="korisnici" ToRole="izdatnica" />
+          <NavigationProperty Name="narudzbenica" Relationship="tiskaraNETModel.FK__narudzben__id_ko__267ABA7A" FromRole="korisnici" ToRole="narudzbenica" />
+          <NavigationProperty Name="primka" Relationship="tiskaraNETModel.FK__primka__id_koris__1ED998B2" FromRole="korisnici" ToRole="primka" />
+          <NavigationProperty Name="racun" Relationship="tiskaraNETModel.FK__racun__id_korisn__2D27B809" FromRole="korisnici" ToRole="racun" />
+        </EntityType>
+        <EntityType Name="narudzbenica">
+          <Key>
+            <PropertyRef Name="id_narudzbenica" />
+          </Key>
+          <Property Name="id_narudzbenica" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="datum" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="id_korisnik" Type="Int32" />
+          <Property Name="id_poslovni_partner" Type="Int32" />
+          <Property Name="izdaje" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="korisnici" Relationship="tiskaraNETModel.FK__narudzben__id_ko__267ABA7A" FromRole="narudzbenica" ToRole="korisnici" />
+          <NavigationProperty Name="poslovni_partner" Relationship="tiskaraNETModel.FK__narudzben__id_po__276EDEB3" FromRole="narudzbenica" ToRole="poslovni_partner" />
+          <NavigationProperty Name="stavke_narudzbenice" Relationship="tiskaraNETModel.FK__stavke_na__id_na__29572725" FromRole="narudzbenica" ToRole="stavke_narudzbenice" />
+        </EntityType>
+        <EntityType Name="oprema">
+          <Key>
+            <PropertyRef Name="id_oprema" />
+          </Key>
+          <Property Name="id_oprema" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="naziv" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="opis" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="poslovni_partner">
+          <Key>
+            <PropertyRef Name="id_poslovni_partner" />
+          </Key>
+          <Property Name="id_poslovni_partner" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="naziv" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="ziro_racun" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="tel_broj" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="narudzbenica" Relationship="tiskaraNETModel.FK__narudzben__id_po__276EDEB3" FromRole="poslovni_partner" ToRole="narudzbenica" />
+        </EntityType>
+        <EntityType Name="primka">
+          <Key>
+            <PropertyRef Name="id_primka" />
+          </Key>
+          <Property Name="id_primka" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="datum" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="id_korisnik" Type="Int32" />
+          <Property Name="izdaje" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="korisnici" Relationship="tiskaraNETModel.FK__primka__id_koris__1ED998B2" FromRole="primka" ToRole="korisnici" />
+          <NavigationProperty Name="stavke_primke" Relationship="tiskaraNETModel.FK__stavke_pr__id_pr__20C1E124" FromRole="primka" ToRole="stavke_primke" />
+        </EntityType>
+        <EntityType Name="racun">
+          <Key>
+            <PropertyRef Name="id_racun" />
+          </Key>
+          <Property Name="id_racun" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="datum" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="id_korisnik" Type="Int32" />
+          <Property Name="izdaje" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="imePrezimeKupca" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="adresaKupca" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="oibKupca" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="iznos" Type="Decimal" Precision="18" Scale="2" />
+          <NavigationProperty Name="korisnici" Relationship="tiskaraNETModel.FK__racun__id_korisn__2D27B809" FromRole="racun" ToRole="korisnici" />
+          <NavigationProperty Name="stavke_racuna" Relationship="tiskaraNETModel.FK__stavke_ra__id_ra__2F10007B" FromRole="racun" ToRole="stavke_racuna" />
+        </EntityType>
+        <EntityType Name="stavke_izdatnice">
+          <Key>
+            <PropertyRef Name="id_izdatnica" />
+            <PropertyRef Name="id_artikli" />
+          </Key>
+          <Property Name="id_izdatnica" Type="Int32" Nullable="false" />
+          <Property Name="id_artikli" Type="Int32" Nullable="false" />
+          <Property Name="kolicina" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="artikli" Relationship="tiskaraNETModel.FK__stavke_iz__id_ar__1BFD2C07" FromRole="stavke_izdatnice" ToRole="artikli" />
+          <NavigationProperty Name="izdatnica" Relationship="tiskaraNETModel.FK__stavke_iz__id_iz__1B0907CE" FromRole="stavke_izdatnice" ToRole="izdatnica" />
+        </EntityType>
+        <EntityType Name="stavke_narudzbenice">
+          <Key>
+            <PropertyRef Name="id_narudzbenica" />
+            <PropertyRef Name="id_artikli" />
+          </Key>
+          <Property Name="id_narudzbenica" Type="Int32" Nullable="false" />
+          <Property Name="id_artikli" Type="Int32" Nullable="false" />
+          <Property Name="kolicina" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="artikli" Relationship="tiskaraNETModel.FK__stavke_na__id_ar__2A4B4B5E" FromRole="stavke_narudzbenice" ToRole="artikli" />
+          <NavigationProperty Name="narudzbenica" Relationship="tiskaraNETModel.FK__stavke_na__id_na__29572725" FromRole="stavke_narudzbenice" ToRole="narudzbenica" />
+        </EntityType>
+        <EntityType Name="stavke_primke">
+          <Key>
+            <PropertyRef Name="id_primka" />
+            <PropertyRef Name="id_artikli" />
+          </Key>
+          <Property Name="id_primka" Type="Int32" Nullable="false" />
+          <Property Name="id_artikli" Type="Int32" Nullable="false" />
+          <Property Name="kolicina" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="artikli" Relationship="tiskaraNETModel.FK__stavke_pr__id_ar__21B6055D" FromRole="stavke_primke" ToRole="artikli" />
+          <NavigationProperty Name="primka" Relationship="tiskaraNETModel.FK__stavke_pr__id_pr__20C1E124" FromRole="stavke_primke" ToRole="primka" />
+        </EntityType>
+        <EntityType Name="stavke_racuna">
+          <Key>
+            <PropertyRef Name="id_racun" />
+            <PropertyRef Name="id_artikli" />
+          </Key>
+          <Property Name="id_racun" Type="Int32" Nullable="false" />
+          <Property Name="id_artikli" Type="Int32" Nullable="false" />
+          <Property Name="kolicina" Type="Int32" Nullable="false" />
+          <Property Name="popust" Type="Int32" />
+          <NavigationProperty Name="artikli" Relationship="tiskaraNETModel.FK__stavke_ra__id_ar__300424B4" FromRole="stavke_racuna" ToRole="artikli" />
+          <NavigationProperty Name="racun" Relationship="tiskaraNETModel.FK__stavke_ra__id_ra__2F10007B" FromRole="stavke_racuna" ToRole="racun" />
+        </EntityType>
+        <EntityType Name="vrsta_artikla">
+          <Key>
+            <PropertyRef Name="id_vrsta_artikla" />
+          </Key>
+          <Property Name="id_vrsta_artikla" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="naziv" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="artikli" Relationship="tiskaraNETModel.FK__artikli__id_vrst__145C0A3F" FromRole="vrsta_artikla" ToRole="artikli" />
+        </EntityType>
+        <Association Name="FK__artikli__id_vrst__145C0A3F">
+          <End Role="vrsta_artikla" Type="tiskaraNETModel.vrsta_artikla" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="artikli" Type="tiskaraNETModel.artikli" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="vrsta_artikla">
+              <PropertyRef Name="id_vrsta_artikla" />
+            </Principal>
+            <Dependent Role="artikli">
+              <PropertyRef Name="id_vrsta_artikla" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_iz__id_ar__1BFD2C07">
+          <End Role="artikli" Type="tiskaraNETModel.artikli" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_izdatnice" Type="tiskaraNETModel.stavke_izdatnice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="artikli">
+              <PropertyRef Name="id_artikli" />
+            </Principal>
+            <Dependent Role="stavke_izdatnice">
+              <PropertyRef Name="id_artikli" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_na__id_ar__2A4B4B5E">
+          <End Role="artikli" Type="tiskaraNETModel.artikli" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_narudzbenice" Type="tiskaraNETModel.stavke_narudzbenice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="artikli">
+              <PropertyRef Name="id_artikli" />
+            </Principal>
+            <Dependent Role="stavke_narudzbenice">
+              <PropertyRef Name="id_artikli" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_pr__id_ar__21B6055D">
+          <End Role="artikli" Type="tiskaraNETModel.artikli" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_primke" Type="tiskaraNETModel.stavke_primke" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="artikli">
+              <PropertyRef Name="id_artikli" />
+            </Principal>
+            <Dependent Role="stavke_primke">
+              <PropertyRef Name="id_artikli" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_ra__id_ar__300424B4">
+          <End Role="artikli" Type="tiskaraNETModel.artikli" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_racuna" Type="tiskaraNETModel.stavke_racuna" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="artikli">
+              <PropertyRef Name="id_artikli" />
+            </Principal>
+            <Dependent Role="stavke_racuna">
+              <PropertyRef Name="id_artikli" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__izdatnica__id_ko__1920BF5C">
+          <End Role="korisnici" Type="tiskaraNETModel.korisnici" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="izdatnica" Type="tiskaraNETModel.izdatnica" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="korisnici">
+              <PropertyRef Name="id_korisnik" />
+            </Principal>
+            <Dependent Role="izdatnica">
+              <PropertyRef Name="id_korisnik" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_iz__id_iz__1B0907CE">
+          <End Role="izdatnica" Type="tiskaraNETModel.izdatnica" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_izdatnice" Type="tiskaraNETModel.stavke_izdatnice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="izdatnica">
+              <PropertyRef Name="id_izdatnica" />
+            </Principal>
+            <Dependent Role="stavke_izdatnice">
+              <PropertyRef Name="id_izdatnica" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__narudzben__id_ko__267ABA7A">
+          <End Role="korisnici" Type="tiskaraNETModel.korisnici" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="narudzbenica" Type="tiskaraNETModel.narudzbenica" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="korisnici">
+              <PropertyRef Name="id_korisnik" />
+            </Principal>
+            <Dependent Role="narudzbenica">
+              <PropertyRef Name="id_korisnik" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__primka__id_koris__1ED998B2">
+          <End Role="korisnici" Type="tiskaraNETModel.korisnici" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="primka" Type="tiskaraNETModel.primka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="korisnici">
+              <PropertyRef Name="id_korisnik" />
+            </Principal>
+            <Dependent Role="primka">
+              <PropertyRef Name="id_korisnik" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__racun__id_korisn__2D27B809">
+          <End Role="korisnici" Type="tiskaraNETModel.korisnici" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="racun" Type="tiskaraNETModel.racun" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="korisnici">
+              <PropertyRef Name="id_korisnik" />
+            </Principal>
+            <Dependent Role="racun">
+              <PropertyRef Name="id_korisnik" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__narudzben__id_po__276EDEB3">
+          <End Role="poslovni_partner" Type="tiskaraNETModel.poslovni_partner" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="narudzbenica" Type="tiskaraNETModel.narudzbenica" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="poslovni_partner">
+              <PropertyRef Name="id_poslovni_partner" />
+            </Principal>
+            <Dependent Role="narudzbenica">
+              <PropertyRef Name="id_poslovni_partner" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_na__id_na__29572725">
+          <End Role="narudzbenica" Type="tiskaraNETModel.narudzbenica" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_narudzbenice" Type="tiskaraNETModel.stavke_narudzbenice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="narudzbenica">
+              <PropertyRef Name="id_narudzbenica" />
+            </Principal>
+            <Dependent Role="stavke_narudzbenice">
+              <PropertyRef Name="id_narudzbenica" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_pr__id_pr__20C1E124">
+          <End Role="primka" Type="tiskaraNETModel.primka" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_primke" Type="tiskaraNETModel.stavke_primke" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="primka">
+              <PropertyRef Name="id_primka" />
+            </Principal>
+            <Dependent Role="stavke_primke">
+              <PropertyRef Name="id_primka" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__stavke_ra__id_ra__2F10007B">
+          <End Role="racun" Type="tiskaraNETModel.racun" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stavke_racuna" Type="tiskaraNETModel.stavke_racuna" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="racun">
+              <PropertyRef Name="id_racun" />
+            </Principal>
+            <Dependent Role="stavke_racuna">
+              <PropertyRef Name="id_racun" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="tiskaraNETModelStoreContainer" CdmEntityContainer="tiskaraNETEntities">
+          <EntitySetMapping Name="artikli">
+            <EntityTypeMapping TypeName="tiskaraNETModel.artikli">
+              <MappingFragment StoreEntitySet="artikli">
+                <ScalarProperty Name="id_artikli" ColumnName="id_artikli" />
+                <ScalarProperty Name="naziv" ColumnName="naziv" />
+                <ScalarProperty Name="kolicina" ColumnName="kolicina" />
+                <ScalarProperty Name="id_vrsta_artikla" ColumnName="id_vrsta_artikla" />
+                <ScalarProperty Name="cijena" ColumnName="cijena" />
+                <ScalarProperty Name="optimalna" ColumnName="optimalna" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="izdatnica">
+            <EntityTypeMapping TypeName="tiskaraNETModel.izdatnica">
+              <MappingFragment StoreEntitySet="izdatnica">
+                <ScalarProperty Name="id_izdatnica" ColumnName="id_izdatnica" />
+                <ScalarProperty Name="datum" ColumnName="datum" />
+                <ScalarProperty Name="id_korisnik" ColumnName="id_korisnik" />
+                <ScalarProperty Name="izdaje" ColumnName="izdaje" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="korisnici">
+            <EntityTypeMapping TypeName="tiskaraNETModel.korisnici">
+              <MappingFragment StoreEntitySet="korisnici">
+                <ScalarProperty Name="id_korisnik" ColumnName="id_korisnik" />
+                <ScalarProperty Name="ime" ColumnName="ime" />
+                <ScalarProperty Name="prezime" ColumnName="prezime" />
+                <ScalarProperty Name="lozinka" ColumnName="lozinka" />
+                <ScalarProperty Name="ziro_racun" ColumnName="ziro_racun" />
+                <ScalarProperty Name="tel_broj" ColumnName="tel_broj" />
+                <ScalarProperty Name="korisnicko_ime" ColumnName="korisnicko_ime" />
+                <ScalarProperty Name="status" ColumnName="status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="narudzbenica">
+            <EntityTypeMapping TypeName="tiskaraNETModel.narudzbenica">
+              <MappingFragment StoreEntitySet="narudzbenica">
+                <ScalarProperty Name="id_narudzbenica" ColumnName="id_narudzbenica" />
+                <ScalarProperty Name="datum" ColumnName="datum" />
+                <ScalarProperty Name="id_korisnik" ColumnName="id_korisnik" />
+                <ScalarProperty Name="id_poslovni_partner" ColumnName="id_poslovni_partner" />
+                <ScalarProperty Name="izdaje" ColumnName="izdaje" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="oprema">
+            <EntityTypeMapping TypeName="tiskaraNETModel.oprema">
+              <MappingFragment StoreEntitySet="oprema">
+                <ScalarProperty Name="id_oprema" ColumnName="id_oprema" />
+                <ScalarProperty Name="naziv" ColumnName="naziv" />
+                <ScalarProperty Name="opis" ColumnName="opis" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="poslovni_partner">
+            <EntityTypeMapping TypeName="tiskaraNETModel.poslovni_partner">
+              <MappingFragment StoreEntitySet="poslovni_partner">
+                <ScalarProperty Name="id_poslovni_partner" ColumnName="id_poslovni_partner" />
+                <ScalarProperty Name="naziv" ColumnName="naziv" />
+                <ScalarProperty Name="ziro_racun" ColumnName="ziro_racun" />
+                <ScalarProperty Name="tel_broj" ColumnName="tel_broj" />
+                <ScalarProperty Name="email" ColumnName="email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="primka">
+            <EntityTypeMapping TypeName="tiskaraNETModel.primka">
+              <MappingFragment StoreEntitySet="primka">
+                <ScalarProperty Name="id_primka" ColumnName="id_primka" />
+                <ScalarProperty Name="datum" ColumnName="datum" />
+                <ScalarProperty Name="id_korisnik" ColumnName="id_korisnik" />
+                <ScalarProperty Name="izdaje" ColumnName="izdaje" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="racun">
+            <EntityTypeMapping TypeName="tiskaraNETModel.racun">
+              <MappingFragment StoreEntitySet="racun">
+                <ScalarProperty Name="id_racun" ColumnName="id_racun" />
+                <ScalarProperty Name="datum" ColumnName="datum" />
+                <ScalarProperty Name="id_korisnik" ColumnName="id_korisnik" />
+                <ScalarProperty Name="izdaje" ColumnName="izdaje" />
+                <ScalarProperty Name="imePrezimeKupca" ColumnName="imePrezimeKupca" />
+                <ScalarProperty Name="adresaKupca" ColumnName="adresaKupca" />
+                <ScalarProperty Name="oibKupca" ColumnName="oibKupca" />
+                <ScalarProperty Name="iznos" ColumnName="iznos" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stavke_izdatnice">
+            <EntityTypeMapping TypeName="tiskaraNETModel.stavke_izdatnice">
+              <MappingFragment StoreEntitySet="stavke_izdatnice">
+                <ScalarProperty Name="id_izdatnica" ColumnName="id_izdatnica" />
+                <ScalarProperty Name="id_artikli" ColumnName="id_artikli" />
+                <ScalarProperty Name="kolicina" ColumnName="kolicina" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stavke_narudzbenice">
+            <EntityTypeMapping TypeName="tiskaraNETModel.stavke_narudzbenice">
+              <MappingFragment StoreEntitySet="stavke_narudzbenice">
+                <ScalarProperty Name="id_narudzbenica" ColumnName="id_narudzbenica" />
+                <ScalarProperty Name="id_artikli" ColumnName="id_artikli" />
+                <ScalarProperty Name="kolicina" ColumnName="kolicina" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stavke_primke">
+            <EntityTypeMapping TypeName="tiskaraNETModel.stavke_primke">
+              <MappingFragment StoreEntitySet="stavke_primke">
+                <ScalarProperty Name="id_primka" ColumnName="id_primka" />
+                <ScalarProperty Name="id_artikli" ColumnName="id_artikli" />
+                <ScalarProperty Name="kolicina" ColumnName="kolicina" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stavke_racuna">
+            <EntityTypeMapping TypeName="tiskaraNETModel.stavke_racuna">
+              <MappingFragment StoreEntitySet="stavke_racuna">
+                <ScalarProperty Name="id_racun" ColumnName="id_racun" />
+                <ScalarProperty Name="id_artikli" ColumnName="id_artikli" />
+                <ScalarProperty Name="kolicina" ColumnName="kolicina" />
+                <ScalarProperty Name="popust" ColumnName="popust" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vrsta_artikla">
+            <EntityTypeMapping TypeName="tiskaraNETModel.vrsta_artikla">
+              <MappingFragment StoreEntitySet="vrsta_artikla">
+                <ScalarProperty Name="id_vrsta_artikla" ColumnName="id_vrsta_artikla" />
+                <ScalarProperty Name="naziv" ColumnName="naziv" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

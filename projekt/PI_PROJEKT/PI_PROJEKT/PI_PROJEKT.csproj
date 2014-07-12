@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95D0D67C-55C5-4B74-B5A3-EB0A471D58AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PI_PROJEKT</RootNamespace>
+    <AssemblyName>PI_PROJEKT</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\Downloads\itextsharp-all-5.5.1\itextsharp-dll-core\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmArtikli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArtikli.Designer.cs">
+      <DependentUpon>frmArtikli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodajArtikl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajArtikl.Designer.cs">
+      <DependentUpon>frmDodajArtikl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodajIzdatnicu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajIzdatnicu.Designer.cs">
+      <DependentUpon>frmDodajIzdatnicu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodajNarudzbenicu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajNarudzbenicu.Designer.cs">
+      <DependentUpon>frmDodajNarudzbenicu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodajOpremu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajOpremu.Designer.cs">
+      <DependentUpon>frmDodajOpremu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodajPartnera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajPartnera.Designer.cs">
+      <DependentUpon>frmDodajPartnera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodajPrimku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajPrimku.Designer.cs">
+      <DependentUpon>frmDodajPrimku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodajRacun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajRacun.Designer.cs">
+      <DependentUpon>frmDodajRacun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodajZaposlenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajZaposlenika.Designer.cs">
+      <DependentUpon>frmDodajZaposlenika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMail.Designer.cs">
+      <DependentUpon>frmMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOdabirArtikla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdabirArtikla.Designer.cs">
+      <DependentUpon>frmOdabirArtikla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOdabirPartnera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdabirPartnera.Designer.cs">
+      <DependentUpon>frmOdabirPartnera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOprema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOprema.Designer.cs">
+      <DependentUpon>frmOprema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPPartneri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPPartneri.Designer.cs">
+      <DependentUpon>frmPPartneri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPregledIzdatnica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPregledIzdatnica.Designer.cs">
+      <DependentUpon>frmPregledIzdatnica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPregledPrimki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPregledPrimki.Designer.cs">
+      <DependentUpon>frmPregledPrimki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPregledRacuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPregledRacuna.Designer.cs">
+      <DependentUpon>frmPregledRacuna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrijava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrijava.Designer.cs">
+      <DependentUpon>frmPrijava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTiskaraNET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTiskaraNET.Designer.cs">
+      <DependentUpon>frmTiskaraNET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrediArtikl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrediArtikl.Designer.cs">
+      <DependentUpon>frmUrediArtikl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrediOpremu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrediOpremu.Designer.cs">
+      <DependentUpon>frmUrediOpremu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrediPartnera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrediPartnera.Designer.cs">
+      <DependentUpon>frmUrediPartnera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPregledNarudzbenica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPregledNarudzbenica.Designer.cs">
+      <DependentUpon>frmPregledNarudzbenica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrediZaposlenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrediZaposlenika.Designer.cs">
+      <DependentUpon>frmUrediZaposlenika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\artikli.cs">
+      <DependentUpon>tiskaraNET.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\izdatnica.cs">
+      <DependentUpon>tiskaraNET.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\korisnici.cs">
+      <DependentUpon>tiskaraNET.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\narudzbenica.cs">
+      <DependentUpon>tiskaraNET.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\oprema.cs">
+      <DependentUpon>tiskaraNET.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\poslovni_partner.cs">
+      <DependentUpon>tiskaraNET.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\primka.cs">
+      <DependentUpon>tiskaraNET.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\racun.cs">
+      <DependentUpon>tiskaraNET.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\stavke_izdatnice.cs">
+      <DependentUpon>tiskaraNET.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\stavke_narudzbenice.cs">
+      <DependentUpon>tiskaraNET.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\stavke_primke.cs">
+      <DependentUpon>tiskaraNET.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\stavke_racuna.cs">
+      <DependentUpon>tiskaraNET.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\tiskaraNET.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tiskaraNET.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\tiskaraNET.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tiskaraNET.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\tiskaraNET.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tiskaraNET.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\vrsta_artikla.cs">
+      <DependentUpon>tiskaraNET.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Podatci.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmZaposlenici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmZaposlenici.Designer.cs">
+      <DependentUpon>frmZaposlenici.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmArtikli.resx">
+      <DependentUpon>frmArtikli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajArtikl.resx">
+      <DependentUpon>frmDodajArtikl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajIzdatnicu.resx">
+      <DependentUpon>frmDodajIzdatnicu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajNarudzbenicu.resx">
+      <DependentUpon>frmDodajNarudzbenicu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajOpremu.resx">
+      <DependentUpon>frmDodajOpremu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajPartnera.resx">
+      <DependentUpon>frmDodajPartnera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajPrimku.resx">
+      <DependentUpon>frmDodajPrimku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajRacun.resx">
+      <DependentUpon>frmDodajRacun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajZaposlenika.resx">
+      <DependentUpon>frmDodajZaposlenika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMail.resx">
+      <DependentUpon>frmMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdabirArtikla.resx">
+      <DependentUpon>frmOdabirArtikla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdabirPartnera.resx">
+      <DependentUpon>frmOdabirPartnera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOprema.resx">
+      <DependentUpon>frmOprema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPPartneri.resx">
+      <DependentUpon>frmPPartneri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPregledIzdatnica.resx">
+      <DependentUpon>frmPregledIzdatnica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPregledPrimki.resx">
+      <DependentUpon>frmPregledPrimki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPregledRacuna.resx">
+      <DependentUpon>frmPregledRacuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrijava.resx">
+      <DependentUpon>frmPrijava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTiskaraNET.resx">
+      <DependentUpon>frmTiskaraNET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPregledNarudzbenica.resx">
+      <DependentUpon>frmPregledNarudzbenica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrediArtikl.resx">
+      <DependentUpon>frmUrediArtikl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrediOpremu.resx">
+      <DependentUpon>frmUrediOpremu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrediPartnera.resx">
+      <DependentUpon>frmUrediPartnera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrediZaposlenika.resx">
+      <DependentUpon>frmUrediZaposlenika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmZaposlenici.resx">
+      <DependentUpon>frmZaposlenici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model\tiskaraNET.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>tiskaraNET.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\tiskaraNET.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>tiskaraNET.edmx</DependentUpon>
+      <LastGenOutput>tiskaraNET.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Model\tiskaraNET.edmx.diagram">
+      <DependentUpon>tiskaraNET.edmx</DependentUpon>
+    </None>
+    <None Include="Model\tiskaraNET.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>tiskaraNET.edmx</DependentUpon>
+      <LastGenOutput>tiskaraNET.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\PI_PROJEKT.Model.tiskaraNETEntities.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

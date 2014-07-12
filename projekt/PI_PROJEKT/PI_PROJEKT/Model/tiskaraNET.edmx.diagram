@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b2af1a0fb48c4ea5816681551bc636a6" Name="Diagram1">
+        <EntityTypeShape EntityType="tiskaraNETModel.artikli" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiskaraNETModel.izdatnica" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiskaraNETModel.korisnici" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiskaraNETModel.narudzbenica" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiskaraNETModel.oprema" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiskaraNETModel.poslovni_partner" Width="1.5" PointX="0.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiskaraNETModel.primka" Width="1.5" PointX="3" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiskaraNETModel.racun" Width="1.5" PointX="6" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiskaraNETModel.stavke_izdatnice" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiskaraNETModel.stavke_narudzbenice" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiskaraNETModel.stavke_primke" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiskaraNETModel.stavke_racuna" Width="1.5" PointX="8.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tiskaraNETModel.vrsta_artikla" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="tiskaraNETModel.FK__artikli__id_vrst__145C0A3F" ManuallyRouted="false" />
+        <AssociationConnector Association="tiskaraNETModel.FK__stavke_iz__id_ar__1BFD2C07" ManuallyRouted="false" />
+        <AssociationConnector Association="tiskaraNETModel.FK__stavke_na__id_ar__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="tiskaraNETModel.FK__stavke_pr__id_ar__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="tiskaraNETModel.FK__stavke_ra__id_ar__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="tiskaraNETModel.FK__izdatnica__id_ko__1920BF5C" ManuallyRouted="false" />
+        <AssociationConnector Association="tiskaraNETModel.FK__stavke_iz__id_iz__1B0907CE" ManuallyRouted="false" />
+        <AssociationConnector Association="tiskaraNETModel.FK__narudzben__id_ko__267ABA7A" ManuallyRouted="false" />
+        <AssociationConnector Association="tiskaraNETModel.FK__primka__id_koris__1ED998B2" ManuallyRouted="false" />
+        <AssociationConnector Association="tiskaraNETModel.FK__racun__id_korisn__2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="tiskaraNETModel.FK__narudzben__id_po__276EDEB3" ManuallyRouted="false" />
+        <AssociationConnector Association="tiskaraNETModel.FK__stavke_na__id_na__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="tiskaraNETModel.FK__stavke_pr__id_pr__20C1E124" ManuallyRouted="false" />
+        <AssociationConnector Association="tiskaraNETModel.FK__stavke_ra__id_ra__2F10007B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

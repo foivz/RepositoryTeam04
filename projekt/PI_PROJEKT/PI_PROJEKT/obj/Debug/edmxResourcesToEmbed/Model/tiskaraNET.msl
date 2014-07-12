@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="tiskaraNETModelStoreContainer" CdmEntityContainer="tiskaraNETEntities">
+    <EntitySetMapping Name="artikli">
+      <EntityTypeMapping TypeName="tiskaraNETModel.artikli">
+        <MappingFragment StoreEntitySet="artikli">
+          <ScalarProperty Name="id_artikli" ColumnName="id_artikli" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+          <ScalarProperty Name="kolicina" ColumnName="kolicina" />
+          <ScalarProperty Name="id_vrsta_artikla" ColumnName="id_vrsta_artikla" />
+          <ScalarProperty Name="cijena" ColumnName="cijena" />
+          <ScalarProperty Name="optimalna" ColumnName="optimalna" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="izdatnica">
+      <EntityTypeMapping TypeName="tiskaraNETModel.izdatnica">
+        <MappingFragment StoreEntitySet="izdatnica">
+          <ScalarProperty Name="id_izdatnica" ColumnName="id_izdatnica" />
+          <ScalarProperty Name="datum" ColumnName="datum" />
+          <ScalarProperty Name="id_korisnik" ColumnName="id_korisnik" />
+          <ScalarProperty Name="izdaje" ColumnName="izdaje" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="korisnici">
+      <EntityTypeMapping TypeName="tiskaraNETModel.korisnici">
+        <MappingFragment StoreEntitySet="korisnici">
+          <ScalarProperty Name="id_korisnik" ColumnName="id_korisnik" />
+          <ScalarProperty Name="ime" ColumnName="ime" />
+          <ScalarProperty Name="prezime" ColumnName="prezime" />
+          <ScalarProperty Name="lozinka" ColumnName="lozinka" />
+          <ScalarProperty Name="ziro_racun" ColumnName="ziro_racun" />
+          <ScalarProperty Name="tel_broj" ColumnName="tel_broj" />
+          <ScalarProperty Name="korisnicko_ime" ColumnName="korisnicko_ime" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="narudzbenica">
+      <EntityTypeMapping TypeName="tiskaraNETModel.narudzbenica">
+        <MappingFragment StoreEntitySet="narudzbenica">
+          <ScalarProperty Name="id_narudzbenica" ColumnName="id_narudzbenica" />
+          <ScalarProperty Name="datum" ColumnName="datum" />
+          <ScalarProperty Name="id_korisnik" ColumnName="id_korisnik" />
+          <ScalarProperty Name="id_poslovni_partner" ColumnName="id_poslovni_partner" />
+          <ScalarProperty Name="izdaje" ColumnName="izdaje" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="oprema">
+      <EntityTypeMapping TypeName="tiskaraNETModel.oprema">
+        <MappingFragment StoreEntitySet="oprema">
+          <ScalarProperty Name="id_oprema" ColumnName="id_oprema" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+          <ScalarProperty Name="opis" ColumnName="opis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="poslovni_partner">
+      <EntityTypeMapping TypeName="tiskaraNETModel.poslovni_partner">
+        <MappingFragment StoreEntitySet="poslovni_partner">
+          <ScalarProperty Name="id_poslovni_partner" ColumnName="id_poslovni_partner" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+          <ScalarProperty Name="ziro_racun" ColumnName="ziro_racun" />
+          <ScalarProperty Name="tel_broj" ColumnName="tel_broj" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="primka">
+      <EntityTypeMapping TypeName="tiskaraNETModel.primka">
+        <MappingFragment StoreEntitySet="primka">
+          <ScalarProperty Name="id_primka" ColumnName="id_primka" />
+          <ScalarProperty Name="datum" ColumnName="datum" />
+          <ScalarProperty Name="id_korisnik" ColumnName="id_korisnik" />
+          <ScalarProperty Name="izdaje" ColumnName="izdaje" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="racun">
+      <EntityTypeMapping TypeName="tiskaraNETModel.racun">
+        <MappingFragment StoreEntitySet="racun">
+          <ScalarProperty Name="id_racun" ColumnName="id_racun" />
+          <ScalarProperty Name="datum" ColumnName="datum" />
+          <ScalarProperty Name="id_korisnik" ColumnName="id_korisnik" />
+          <ScalarProperty Name="izdaje" ColumnName="izdaje" />
+          <ScalarProperty Name="imePrezimeKupca" ColumnName="imePrezimeKupca" />
+          <ScalarProperty Name="adresaKupca" ColumnName="adresaKupca" />
+          <ScalarProperty Name="oibKupca" ColumnName="oibKupca" />
+          <ScalarProperty Name="iznos" ColumnName="iznos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stavke_izdatnice">
+      <EntityTypeMapping TypeName="tiskaraNETModel.stavke_izdatnice">
+        <MappingFragment StoreEntitySet="stavke_izdatnice">
+          <ScalarProperty Name="id_izdatnica" ColumnName="id_izdatnica" />
+          <ScalarProperty Name="id_artikli" ColumnName="id_artikli" />
+          <ScalarProperty Name="kolicina" ColumnName="kolicina" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stavke_narudzbenice">
+      <EntityTypeMapping TypeName="tiskaraNETModel.stavke_narudzbenice">
+        <MappingFragment StoreEntitySet="stavke_narudzbenice">
+          <ScalarProperty Name="id_narudzbenica" ColumnName="id_narudzbenica" />
+          <ScalarProperty Name="id_artikli" ColumnName="id_artikli" />
+          <ScalarProperty Name="kolicina" ColumnName="kolicina" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stavke_primke">
+      <EntityTypeMapping TypeName="tiskaraNETModel.stavke_primke">
+        <MappingFragment StoreEntitySet="stavke_primke">
+          <ScalarProperty Name="id_primka" ColumnName="id_primka" />
+          <ScalarProperty Name="id_artikli" ColumnName="id_artikli" />
+          <ScalarProperty Name="kolicina" ColumnName="kolicina" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stavke_racuna">
+      <EntityTypeMapping TypeName="tiskaraNETModel.stavke_racuna">
+        <MappingFragment StoreEntitySet="stavke_racuna">
+          <ScalarProperty Name="id_racun" ColumnName="id_racun" />
+          <ScalarProperty Name="id_artikli" ColumnName="id_artikli" />
+          <ScalarProperty Name="kolicina" ColumnName="kolicina" />
+          <ScalarProperty Name="popust" ColumnName="popust" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vrsta_artikla">
+      <EntityTypeMapping TypeName="tiskaraNETModel.vrsta_artikla">
+        <MappingFragment StoreEntitySet="vrsta_artikla">
+          <ScalarProperty Name="id_vrsta_artikla" ColumnName="id_vrsta_artikla" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
