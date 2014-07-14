@@ -264,7 +264,7 @@
             this.Controls.Add(this.dgvNoveStavke);
             this.Controls.Add(this.btnDodajRačun);
             this.Name = "frmDodajPrimku";
-            this.Text = "frmDodajPrimku";
+            this.Text = "Dodaj Primku";
             this.Load += new System.EventHandler(this.frmDodajPrimku_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();

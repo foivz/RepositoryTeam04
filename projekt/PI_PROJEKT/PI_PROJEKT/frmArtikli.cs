@@ -44,6 +44,7 @@ namespace PI_PROJEKT
                 }
                 
                 redtest.Cells[4].Value = red.cijena;
+                redtest.Cells[5].Value = red.optimalna;
                 dgvTest.Rows.Add(redtest);
             }           
         }

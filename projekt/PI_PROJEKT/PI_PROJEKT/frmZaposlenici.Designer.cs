@@ -73,8 +73,8 @@
             this.Column6,
             this.Column7});
             this.dgvZaposleniciPopis.Location = new System.Drawing.Point(12, 12);
+            this.dgvZaposleniciPopis.MultiSelect = false;
             this.dgvZaposleniciPopis.Name = "dgvZaposleniciPopis";
-            this.dgvZaposleniciPopis.ReadOnly = true;
             this.dgvZaposleniciPopis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvZaposleniciPopis.Size = new System.Drawing.Size(742, 193);
             this.dgvZaposleniciPopis.TabIndex = 3;
@@ -83,48 +83,41 @@
             // 
             this.Column1.HeaderText = "ID zaposlenika";
             this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column2.HeaderText = "Ime";
             this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column3.HeaderText = "Prezime";
             this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column4.HeaderText = "Lozinka";
             this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column5.HeaderText = "Žiro račun";
             this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column6.HeaderText = "Telefonski broj";
             this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
             // 
             // Column7
             // 
             this.Column7.HeaderText = "Status";
             this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
             // 
             // frmZaposlenici
             // 

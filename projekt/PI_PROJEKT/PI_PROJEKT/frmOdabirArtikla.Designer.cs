@@ -37,7 +37,9 @@
             // 
             this.dgvArtikli.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArtikli.Location = new System.Drawing.Point(12, 12);
+            this.dgvArtikli.MultiSelect = false;
             this.dgvArtikli.Name = "dgvArtikli";
+            this.dgvArtikli.ReadOnly = true;
             this.dgvArtikli.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvArtikli.Size = new System.Drawing.Size(426, 150);
             this.dgvArtikli.TabIndex = 0;
@@ -60,7 +62,7 @@
             this.Controls.Add(this.btnUbaciStavku);
             this.Controls.Add(this.dgvArtikli);
             this.Name = "frmOdabirArtikla";
-            this.Text = "frmOdabirArtikla";
+            this.Text = "Odabir Artikla";
             this.Load += new System.EventHandler(this.frmOdabirArtikla_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArtikli)).EndInit();
             this.ResumeLayout(false);

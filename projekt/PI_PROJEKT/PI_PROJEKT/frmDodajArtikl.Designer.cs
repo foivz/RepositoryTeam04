@@ -37,6 +37,8 @@
             this.cbVrstaArtikla = new System.Windows.Forms.ComboBox();
             this.txtCijena = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.txtOptimalna = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -60,7 +62,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 129);
+            this.label3.Location = new System.Drawing.Point(12, 162);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 13);
             this.label3.TabIndex = 2;
@@ -83,7 +85,7 @@
             // 
             // btnDodajArtikl
             // 
-            this.btnDodajArtikl.Location = new System.Drawing.Point(15, 163);
+            this.btnDodajArtikl.Location = new System.Drawing.Point(14, 202);
             this.btnDodajArtikl.Name = "btnDodajArtikl";
             this.btnDodajArtikl.Size = new System.Drawing.Size(226, 34);
             this.btnDodajArtikl.TabIndex = 7;
@@ -94,14 +96,14 @@
             // cbVrstaArtikla
             // 
             this.cbVrstaArtikla.FormattingEnabled = true;
-            this.cbVrstaArtikla.Location = new System.Drawing.Point(82, 126);
+            this.cbVrstaArtikla.Location = new System.Drawing.Point(83, 159);
             this.cbVrstaArtikla.Name = "cbVrstaArtikla";
             this.cbVrstaArtikla.Size = new System.Drawing.Size(157, 21);
             this.cbVrstaArtikla.TabIndex = 10;
             // 
             // txtCijena
             // 
-            this.txtCijena.Location = new System.Drawing.Point(82, 86);
+            this.txtCijena.Location = new System.Drawing.Point(83, 119);
             this.txtCijena.Name = "txtCijena";
             this.txtCijena.Size = new System.Drawing.Size(157, 20);
             this.txtCijena.TabIndex = 12;
@@ -110,17 +112,36 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 89);
+            this.label4.Location = new System.Drawing.Point(13, 122);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "Cijena";
             // 
+            // txtOptimalna
+            // 
+            this.txtOptimalna.Location = new System.Drawing.Point(83, 79);
+            this.txtOptimalna.Name = "txtOptimalna";
+            this.txtOptimalna.Size = new System.Drawing.Size(157, 20);
+            this.txtOptimalna.TabIndex = 14;
+            this.txtOptimalna.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtOptimalna_KeyPress);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 82);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 13);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Optimalna";
+            // 
             // frmDodajArtikl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(253, 210);
+            this.ClientSize = new System.Drawing.Size(253, 258);
+            this.Controls.Add(this.txtOptimalna);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtCijena);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cbVrstaArtikla);
@@ -150,5 +171,7 @@
         private System.Windows.Forms.ComboBox cbVrstaArtikla;
         private System.Windows.Forms.TextBox txtCijena;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtOptimalna;
+        private System.Windows.Forms.Label label5;
     }
 }

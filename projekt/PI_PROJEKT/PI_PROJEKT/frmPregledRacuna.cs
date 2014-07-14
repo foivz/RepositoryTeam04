@@ -82,6 +82,19 @@ namespace PI_PROJEKT
             PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Račun-broj-" + dgvRacuni.SelectedCells[0].Value.ToString() + ".pdf", FileMode.Create));
             doc.Open();
 
+            Paragraph paragraph = new Paragraph("Racun broj: " + dgvRacuni.SelectedCells[0].Value.ToString() + "\n");
+            doc.Add(paragraph);
+            Paragraph paragraph1 = new Paragraph("Datum izdavanja: " + dgvRacuni.SelectedCells[1].Value.ToString() + "\n");
+            doc.Add(paragraph1);
+            Paragraph paragraph2 = new Paragraph("Izdao: " + dgvRacuni.SelectedCells[2].Value.ToString() + "\n");
+            doc.Add(paragraph2);
+            Paragraph paragraph3 = new Paragraph("Ime i prezime kupca: " + dgvRacuni.SelectedCells[3].Value.ToString() + "\n");
+            doc.Add(paragraph3);
+            Paragraph paragraph4 = new Paragraph("Adresa kupca: " + dgvRacuni.SelectedCells[4].Value.ToString() + "\n");
+            doc.Add(paragraph4);
+            Paragraph paragraph5 = new Paragraph("OIB kupca: " + dgvRacuni.SelectedCells[5].Value.ToString() + "\n\n");
+            doc.Add(paragraph5);
+
             PdfPTable table = new PdfPTable(dgvPopisStavki.Columns.Count);
 
             for (int j = 0; j < dgvPopisStavki.Columns.Count; j++)
@@ -105,7 +118,10 @@ namespace PI_PROJEKT
             }
             doc.Add(table);
 
-            doc.Close(); 
+            doc.Close();
+
+            System.Diagnostics.Process.Start("Račun-broj-" + dgvRacuni.SelectedCells[0].Value.ToString() + ".pdf");
+
         }
     }
 }

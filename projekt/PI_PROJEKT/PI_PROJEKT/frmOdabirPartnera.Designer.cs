@@ -47,7 +47,9 @@
             // 
             this.dgvPart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPart.Location = new System.Drawing.Point(12, 12);
+            this.dgvPart.MultiSelect = false;
             this.dgvPart.Name = "dgvPart";
+            this.dgvPart.ReadOnly = true;
             this.dgvPart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPart.Size = new System.Drawing.Size(737, 150);
             this.dgvPart.TabIndex = 2;
@@ -60,7 +62,7 @@
             this.Controls.Add(this.btnOdaberi);
             this.Controls.Add(this.dgvPart);
             this.Name = "frmOdabirPartnera";
-            this.Text = "frmOdabirPartnera";
+            this.Text = "Odabir Partnera";
             this.Load += new System.EventHandler(this.frmOdabirPartnera_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPart)).EndInit();
             this.ResumeLayout(false);

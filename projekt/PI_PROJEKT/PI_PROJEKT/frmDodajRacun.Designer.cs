@@ -324,6 +324,7 @@
             // txtOIBKupac
             // 
             this.txtOIBKupac.Location = new System.Drawing.Point(120, 72);
+            this.txtOIBKupac.MaxLength = 11;
             this.txtOIBKupac.Name = "txtOIBKupac";
             this.txtOIBKupac.Size = new System.Drawing.Size(159, 20);
             this.txtOIBKupac.TabIndex = 21;
@@ -416,7 +417,7 @@
             this.Controls.Add(this.dgvNoveStavke);
             this.Controls.Add(this.btnDodajRačun);
             this.Name = "frmDodajRacun";
-            this.Text = "frmDodajRacun";
+            this.Text = "Dodaj Racun";
             this.Load += new System.EventHandler(this.frmDodajRacun_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNoveStavke)).EndInit();
             this.groupBox1.ResumeLayout(false);

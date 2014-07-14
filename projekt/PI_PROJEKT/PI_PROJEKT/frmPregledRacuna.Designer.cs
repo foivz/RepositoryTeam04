@@ -59,6 +59,7 @@
             this.Column10,
             this.Column11});
             this.dgvRacuni.Location = new System.Drawing.Point(12, 34);
+            this.dgvRacuni.MultiSelect = false;
             this.dgvRacuni.Name = "dgvRacuni";
             this.dgvRacuni.ReadOnly = true;
             this.dgvRacuni.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -133,6 +134,7 @@
             this.Column4,
             this.Column5});
             this.dgvPopisStavki.Location = new System.Drawing.Point(12, 230);
+            this.dgvPopisStavki.MultiSelect = false;
             this.dgvPopisStavki.Name = "dgvPopisStavki";
             this.dgvPopisStavki.ReadOnly = true;
             this.dgvPopisStavki.Size = new System.Drawing.Size(743, 150);

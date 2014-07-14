@@ -56,7 +56,7 @@ namespace PI_PROJEKT
 
             txtIDnaru.Text = Podatci.ID_narudzbenica.ToString();
             txtIzdao.Text = Podatci.Ime.ToString() +" "+ Podatci.Prezime.ToString();
-            txtDatum.Text = "Darum";
+            txtDatum.Text = Podatci.DtmMail.ToString();
             txtIdZap.Text = Podatci.ID_korisnik.ToString();
 
             foreach (var red in baza.stavke_narudzbenice)
@@ -82,6 +82,17 @@ namespace PI_PROJEKT
             Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
             PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Narudzbenica-slanje-broj-" + txtIDnaru.Text + ".pdf", FileMode.Create));
             doc.Open();
+
+            Paragraph paragraph = new Paragraph("Narudzbenica broj: " +txtIDnaru.Text + "\n");
+            doc.Add(paragraph);
+            Paragraph paragraph1 = new Paragraph("Datum izdavanja: " + txtDatum.Text + "\n");
+            doc.Add(paragraph1);
+            Paragraph paragraph2 = new Paragraph("Izdao: " + txtIzdao.Text+ "\n");
+            doc.Add(paragraph2);
+            Paragraph paragraph3 = new Paragraph("Sifra poslovnog partnera: " + Podatci.IdPartnerMail.ToString() + "\n");
+            doc.Add(paragraph3);
+            Paragraph paragraph4 = new Paragraph("Naziv poslovnog partnera: " + Podatci.NazivPartnerMail  + "\n\n");
+            doc.Add(paragraph4);
 
             PdfPTable table = new PdfPTable(dgvStavkeNarudzbenice.Columns.Count);
 

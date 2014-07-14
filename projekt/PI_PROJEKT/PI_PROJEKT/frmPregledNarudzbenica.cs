@@ -82,6 +82,18 @@ namespace PI_PROJEKT
             PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Narudzbenica-broj-"+dgvNarudzbenice.SelectedCells[0].Value.ToString()+".pdf", FileMode.Create));
             doc.Open();
 
+            Paragraph paragraph = new Paragraph("Narudzbenica broj: " + dgvNarudzbenice.SelectedCells[0].Value.ToString() + "\n");
+            doc.Add(paragraph);
+            Paragraph paragraph1 = new Paragraph("Datum izdavanja: " + dgvNarudzbenice.SelectedCells[1].Value.ToString() + "\n");
+            doc.Add(paragraph1);
+            Paragraph paragraph2 = new Paragraph("Izdao: " + dgvNarudzbenice.SelectedCells[2].Value.ToString() + "\n");
+            doc.Add(paragraph2);
+            Paragraph paragraph3 = new Paragraph("Sifra poslovnog partnera: " + dgvNarudzbenice.SelectedCells[3].Value.ToString() + "\n");
+            doc.Add(paragraph3);
+            Paragraph paragraph4 = new Paragraph("Naziv poslovnog partnera: " + dgvNarudzbenice.SelectedCells[4].Value.ToString() + "\n\n");
+            doc.Add(paragraph4);
+
+
             PdfPTable table = new PdfPTable(dgvStavkeNarudzbenice.Columns.Count);
 
             for (int j = 0; j < dgvStavkeNarudzbenice.Columns.Count; j++)
@@ -105,7 +117,9 @@ namespace PI_PROJEKT
             }
             doc.Add(table);
 
-            doc.Close(); 
+            doc.Close();
+
+            System.Diagnostics.Process.Start("Narudzbenica-broj-"+dgvNarudzbenice.SelectedCells[0].Value.ToString()+".pdf");
         }
     }
 }

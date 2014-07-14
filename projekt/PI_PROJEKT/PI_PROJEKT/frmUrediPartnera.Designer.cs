@@ -130,7 +130,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmUrediPartnera";
-            this.Text = "frmUrediPartnera";
+            this.Text = "Uredi partnera";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmUrediPartnera_FormClosed);
             this.Load += new System.EventHandler(this.frmUrediPartnera_Load);
             this.ResumeLayout(false);

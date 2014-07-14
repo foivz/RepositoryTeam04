@@ -246,6 +246,7 @@
             this.Text = "TiskaraNET";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmTiskaraNET_FormClosed);
             this.Load += new System.EventHandler(this.TiskaraNET_Load);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.frmTiskaraNET_MouseClick);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

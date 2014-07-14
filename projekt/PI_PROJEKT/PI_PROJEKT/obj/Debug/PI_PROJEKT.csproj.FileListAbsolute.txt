@@ -144,39 +144,39 @@ C:\Users\Andrija\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.csproj.Gener
 C:\Users\Andrija\Desktop\mreze zadaci\PI_PROJEKT\PI_PROJEKT\bin\Debug\PI_PROJEKT.exe.config
 C:\Users\Andrija\Desktop\mreze zadaci\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.exe
 C:\Users\Andrija\Desktop\mreze zadaci\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.pdb
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\bin\Debug\PI_PROJEKT.exe.config
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.exe
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.pdb
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\bin\Debug\PI_PROJEKT.exe
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\bin\Debug\PI_PROJEKT.pdb
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\bin\Debug\EntityFramework.dll
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\bin\Debug\EntityFramework.xml
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\bin\Debug\itextsharp.xml
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.csprojResolveAssemblyReference.cache
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmArtikli.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajArtikl.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajIzdatnicu.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajNarudzbenicu.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajOpremu.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajPartnera.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajPrimku.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajRacun.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajZaposlenika.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmMail.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmOdabirArtikla.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmOdabirPartnera.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmOprema.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmPPartneri.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmPregledIzdatnica.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmPregledPrimki.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmPregledRacuna.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmPrijava.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmTiskaraNET.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmPregledNarudzbenica.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmUrediArtikl.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmUrediOpremu.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmUrediPartnera.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmUrediZaposlenika.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.Properties.Resources.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmZaposlenici.resources
-C:\Users\Tomislav\Desktop\VersionControl\New folder\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.csproj.GenerateResource.Cache
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\bin\Debug\PI_PROJEKT.exe.config
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.exe
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.pdb
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\bin\Debug\PI_PROJEKT.exe
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\bin\Debug\PI_PROJEKT.pdb
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\bin\Debug\EntityFramework.dll
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\bin\Debug\EntityFramework.xml
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\bin\Debug\itextsharp.xml
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.csprojResolveAssemblyReference.cache
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmArtikli.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajArtikl.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajIzdatnicu.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajNarudzbenicu.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajOpremu.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajPartnera.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajPrimku.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajRacun.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmDodajZaposlenika.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmMail.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmOdabirArtikla.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmOdabirPartnera.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmOprema.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmPPartneri.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmPregledIzdatnica.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmPregledPrimki.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmPregledRacuna.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmPrijava.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmTiskaraNET.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmPregledNarudzbenica.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmUrediArtikl.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmUrediOpremu.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmUrediPartnera.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmUrediZaposlenika.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.Properties.Resources.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.frmZaposlenici.resources
+C:\Users\Hoc\Desktop\PI_PROJEKT\PI_PROJEKT\obj\Debug\PI_PROJEKT.csproj.GenerateResource.Cache

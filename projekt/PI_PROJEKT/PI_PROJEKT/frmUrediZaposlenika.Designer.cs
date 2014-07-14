@@ -193,7 +193,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmUrediZaposlenika";
-            this.Text = "frmUrediZaposlenika";
+            this.Text = "Uredi zaposlenika";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmUrediZaposlenika_FormClosed);
             this.Load += new System.EventHandler(this.frmUrediZaposlenika_Load);
             this.ResumeLayout(false);

@@ -70,6 +70,7 @@ namespace PI_PROJEKT
             artikl.naziv = txtNaziv.Text.ToString();
             artikl.kolicina=Convert.ToInt32(txtKolicina.Text);
             artikl.cijena=Convert.ToDecimal(txtCijena.Text);
+            artikl.optimalna = Convert.ToInt32(txtOptimalna.Text);
 
             int id_vrste = 0;
 
@@ -113,6 +114,16 @@ namespace PI_PROJEKT
             }
 
             if (!Char.IsDigit(ch) && ch != 8 && ch != 44)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtOptimalna_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (!Char.IsDigit(ch) && ch != 8)
             {
                 e.Handled = true;
             }

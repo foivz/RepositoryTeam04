@@ -8,9 +8,10 @@ namespace PI_PROJEKT
 {
     class Podatci
     {
-        static int id_korisnik, id_partner, status, id_artikla, id_opreme, id_zaposlenika, id_promjena_artikla, id_partner_dodavanje, id_narudzbenice, klik;
-        static string ime, prezime, naziv_artikla, partner_naziv, partner_ziro_racun, partner_email, partner_telefonski_broj, nedostaje;
+        static int id_korisnik, id_partner, status, id_artikla, id_opreme, id_zaposlenika, id_promjena_artikla, id_partner_dodavanje, id_narudzbenice, klik, idPartnerMail;
+        static string ime, prezime, naziv_artikla, partner_naziv, partner_ziro_racun, partner_email, partner_telefonski_broj, nedostaje, nazivPartnerMail;
         static decimal cijena;
+        static DateTime dtmMail;
 
         #region Podatci za izbor partnera
 
@@ -132,6 +133,25 @@ namespace PI_PROJEKT
         {
             get { return klik; }
             set { klik = value; }
+        }
+
+        public static string NazivPartnerMail
+        {
+            get { return nazivPartnerMail; }
+            set { nazivPartnerMail = value; }
+        }
+
+        public static int IdPartnerMail
+        {
+            get { return idPartnerMail; }
+            set { idPartnerMail = value; }
+        }
+
+        public static DateTime DtmMail 
+        {
+            get { return dtmMail; }
+            set { dtmMail = value; }
+ 
         }
      
        

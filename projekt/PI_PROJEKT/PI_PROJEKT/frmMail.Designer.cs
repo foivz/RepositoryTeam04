@@ -292,7 +292,7 @@
             this.txtIzdao.Location = new System.Drawing.Point(132, 15);
             this.txtIzdao.Name = "txtIzdao";
             this.txtIzdao.ReadOnly = true;
-            this.txtIzdao.Size = new System.Drawing.Size(100, 20);
+            this.txtIzdao.Size = new System.Drawing.Size(111, 20);
             this.txtIzdao.TabIndex = 42;
             // 
             // txtIdZap
@@ -300,7 +300,7 @@
             this.txtIdZap.Location = new System.Drawing.Point(132, 41);
             this.txtIdZap.Name = "txtIdZap";
             this.txtIdZap.ReadOnly = true;
-            this.txtIdZap.Size = new System.Drawing.Size(100, 20);
+            this.txtIdZap.Size = new System.Drawing.Size(111, 20);
             this.txtIdZap.TabIndex = 43;
             // 
             // txtDatum
@@ -308,7 +308,7 @@
             this.txtDatum.Location = new System.Drawing.Point(132, 67);
             this.txtDatum.Name = "txtDatum";
             this.txtDatum.ReadOnly = true;
-            this.txtDatum.Size = new System.Drawing.Size(100, 20);
+            this.txtDatum.Size = new System.Drawing.Size(111, 20);
             this.txtDatum.TabIndex = 44;
             // 
             // label10

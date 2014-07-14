@@ -84,7 +84,7 @@
             this.groupBox3.Size = new System.Drawing.Size(310, 107);
             this.groupBox3.TabIndex = 33;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Račun izdaje";
+            this.groupBox3.Text = "Narudžbenicu izdaje";
             // 
             // label7
             // 
@@ -440,7 +440,7 @@
             this.Controls.Add(this.dgvNoveStavke);
             this.Controls.Add(this.btnDodajNarudžbenicu);
             this.Name = "frmDodajNarudzbenicu";
-            this.Text = "frmDodajNarudzbenicu";
+            this.Text = "Dodaj Narudzbenicu";
             this.Load += new System.EventHandler(this.frmDodajNarudzbenicu_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();

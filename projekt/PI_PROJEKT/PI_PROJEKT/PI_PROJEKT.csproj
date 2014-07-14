@@ -349,6 +349,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>tiskaraNET.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="Dijagram_klasa.cd" />
     <None Include="Model\tiskaraNET.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>tiskaraNET.edmx</DependentUpon>

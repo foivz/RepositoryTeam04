@@ -71,6 +71,13 @@ namespace PI_PROJEKT
             PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Izdatnica-broj-" + dgvIzdatnice.SelectedCells[0].Value.ToString() + ".pdf", FileMode.Create));
             doc.Open();
 
+            Paragraph paragraph = new Paragraph("Izdatnica broj: " + dgvIzdatnice.SelectedCells[0].Value.ToString() + "\n");
+            doc.Add(paragraph);
+            Paragraph paragraph1 = new Paragraph("Datum izdavanja: " + dgvIzdatnice.SelectedCells[1].Value.ToString() + "\n");
+            doc.Add(paragraph1);
+            Paragraph paragraph2 = new Paragraph("Izdao: " + dgvIzdatnice.SelectedCells[2].Value.ToString()+ "\n\n" );
+            doc.Add(paragraph2);
+
             PdfPTable table = new PdfPTable(dgvStavkeIzdatnice.Columns.Count);
 
             for (int j = 0; j < dgvStavkeIzdatnice.Columns.Count; j++)
@@ -94,7 +101,8 @@ namespace PI_PROJEKT
             }
             doc.Add(table);
 
-            doc.Close(); 
+            doc.Close();
+            System.Diagnostics.Process.Start("Izdatnica-broj-" + dgvIzdatnice.SelectedCells[0].Value.ToString() + ".pdf");
         }
     }
 }

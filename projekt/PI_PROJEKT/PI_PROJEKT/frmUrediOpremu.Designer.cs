@@ -89,7 +89,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmUrediOpremu";
-            this.Text = "frmUrediOpremu";
+            this.Text = "Uredi opremu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmUrediOpremu_FormClosed);
             this.Load += new System.EventHandler(this.frmUrediOpremu_Load);
             this.ResumeLayout(false);

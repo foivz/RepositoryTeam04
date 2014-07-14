@@ -38,7 +38,9 @@
             // 
             this.dgvPartneri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPartneri.Location = new System.Drawing.Point(12, 12);
+            this.dgvPartneri.MultiSelect = false;
             this.dgvPartneri.Name = "dgvPartneri";
+            this.dgvPartneri.ReadOnly = true;
             this.dgvPartneri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPartneri.Size = new System.Drawing.Size(773, 150);
             this.dgvPartneri.TabIndex = 0;
@@ -72,7 +74,7 @@
             this.Controls.Add(this.btnDodajPartnera);
             this.Controls.Add(this.dgvPartneri);
             this.Name = "frmPPartneri";
-            this.Text = "PPartneri";
+            this.Text = "Poslovni Partneri";
             this.Load += new System.EventHandler(this.PPartneri_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPartneri)).EndInit();
             this.ResumeLayout(false);

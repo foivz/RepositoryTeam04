@@ -64,8 +64,6 @@ namespace PI_PROJEKT
 
         private void frmPrijava_Load(object sender, EventArgs e)
         {
-            txtKorisnickoIme.Text = "thop";
-            txtLozinka.Text = "lozinka";
         }
     }
 }

@@ -51,6 +51,7 @@
             this.Column2,
             this.Column3});
             this.dgvIzdatnice.Location = new System.Drawing.Point(12, 29);
+            this.dgvIzdatnice.MultiSelect = false;
             this.dgvIzdatnice.Name = "dgvIzdatnice";
             this.dgvIzdatnice.ReadOnly = true;
             this.dgvIzdatnice.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -85,6 +86,7 @@
             this.Column5,
             this.Column6});
             this.dgvStavkeIzdatnice.Location = new System.Drawing.Point(12, 230);
+            this.dgvStavkeIzdatnice.MultiSelect = false;
             this.dgvStavkeIzdatnice.Name = "dgvStavkeIzdatnice";
             this.dgvStavkeIzdatnice.ReadOnly = true;
             this.dgvStavkeIzdatnice.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;

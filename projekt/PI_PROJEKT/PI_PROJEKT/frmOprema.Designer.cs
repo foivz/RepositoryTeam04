@@ -38,7 +38,9 @@
             // 
             this.dgvOprema.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOprema.Location = new System.Drawing.Point(12, 21);
+            this.dgvOprema.MultiSelect = false;
             this.dgvOprema.Name = "dgvOprema";
+            this.dgvOprema.ReadOnly = true;
             this.dgvOprema.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvOprema.Size = new System.Drawing.Size(663, 150);
             this.dgvOprema.TabIndex = 0;

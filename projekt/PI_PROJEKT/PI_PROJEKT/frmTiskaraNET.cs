@@ -16,9 +16,12 @@ namespace PI_PROJEKT
         public frmTiskaraNET()
         {
             InitializeComponent();
+
         }
 
         private tiskaraNETEntities baza = new tiskaraNETEntities();
+
+        
 
         private void TiskaraNET_Load(object sender, EventArgs e)
         {
@@ -37,6 +40,8 @@ namespace PI_PROJEKT
 
                 }
             }
+
+            
         }
 
         private void narudžbenicaToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -152,9 +157,17 @@ namespace PI_PROJEKT
         }
 
         private void pomoćToolStripMenuItem_Click(object sender, EventArgs e)
-        {zaposleniciToolStripMenuItem 
-            Help.ShowHelp(this, "file://C:\\Users\\Tomislav\\Desktop\\VersionControl\\New folder\\PI_PROJEKT\\PI_PROJEKT\\Pomoc.chm");
-         
+        {
+            //Help.ShowHelp(this, "file://C:\\Users\\Andrija\\Desktop\\PI_PROJEKT\\Pomoc.chm");
+            System.Diagnostics.Process.Start("Pomoc.chm");
+
+        }
+
+        
+
+        private void frmTiskaraNET_MouseClick(object sender, MouseEventArgs e)
+        {
+            
         }
 
     }

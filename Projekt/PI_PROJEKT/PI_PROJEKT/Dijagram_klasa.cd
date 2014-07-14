@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PI_PROJEKT.frmArtikli" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAKAAAIAAAACAAAACAAF4BAAAEAAAAAAAIAA=</HashCode>
+      <FileName>frmArtikli.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmDodajArtikl" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAABAAAACIAAZQAEACIAQACAEAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>frmDodajArtikl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmDodajIzdatnicu" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQABAAEACMGABkACICIgAIDQAAAAQAAQiEAAAAIAIA=</HashCode>
+      <FileName>frmDodajIzdatnicu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmDodajNarudzbenicu" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAEJAAEACoCATIAKACIgAIDQcQ4AYAAQ2EAAAAACIA=</HashCode>
+      <FileName>frmDodajNarudzbenicu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmDodajOpremu" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAKAAABAAAACAAAAiAABAAAAAAAAAIAAAABA=</HashCode>
+      <FileName>frmDodajOpremu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmDodajPartnera" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAABAAAAKAACRAAAACAEAICAARAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>frmDodajPartnera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmDodajPrimku" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQABAAEACMGABEACICIgAIDQAAAAQAAQiEAABAIAIA=</HashCode>
+      <FileName>frmDodajPrimku.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmDodajRacun" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BKQQBAAEACOGAFEECICIgAIDQAAAAQAA0ikAAAAIAIA=</HashCode>
+      <FileName>frmDodajRacun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmDodajZaposlenika" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEABIAAACAACBAAAACAAAICIAQQAAAAAAAAAAAACFA=</HashCode>
+      <FileName>frmDodajZaposlenika.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmMail" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8AAABACAQKAAABAMAgCggQACIACAQUAAAGgBEAAAAUA=</HashCode>
+      <FileName>frmMail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmOdabirArtikla" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAACAAAAAAAACAAAACAAAAAAAAABAAAoAAAAg=</HashCode>
+      <FileName>frmOdabirArtikla.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmOdabirPartnera" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAACCAAEAAAAACAAAACAAAAAAAAAAAAAAACAEA=</HashCode>
+      <FileName>frmOdabirPartnera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmOprema" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAARAAAACAIAAAAAACAoAACAAAAAAAAAAAQAAAAAAQ=</HashCode>
+      <FileName>frmOprema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmPPartneri" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAABAAAACAAAAAAAAiAAAACAAAgAAAAABAAAAgAAgA=</HashCode>
+      <FileName>frmPPartneri.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmPregledIzdatnica" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAACBACBAAAACAAAACAAA4BwAAAEhAAAAAAAA=</HashCode>
+      <FileName>frmPregledIzdatnica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmPregledNarudzbenica" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAEQCAAABAAAACAAAACAgC4RwAAAEAAAAAAAAI=</HashCode>
+      <FileName>frmPregledNarudzbenica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmPregledPrimki" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAACAAABAACACEAAACAAA4BwoAAEAAAAAAAAA=</HashCode>
+      <FileName>frmPregledPrimki.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmPregledRacuna" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAACgAABAAAACBAAACAAC4ZwAAAEAEAAAIIAA=</HashCode>
+      <FileName>frmPregledRacuna.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmPrijava" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABIAAACAAABACAACABAICAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>frmPrijava.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmTiskaraNET" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQBIFgKAICBAAAAkAACKAAACAAAIQRiUQIAEGABAkKE=</HashCode>
+      <FileName>frmTiskaraNET.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmUrediArtikl" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAABAAAACIAAZQAAACIAAACQEAAAAAAgAAAAAAAAkA=</HashCode>
+      <FileName>frmUrediArtikl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmUrediOpremu" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAACAIABAAAACAACACAAAAAAAAAAAQIAAAChA=</HashCode>
+      <FileName>frmUrediOpremu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmUrediPartnera" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAADAAAUCAACRAAAACAAAICAAQAAIBAAAAAAAAAAgA=</HashCode>
+      <FileName>frmUrediPartnera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmUrediZaposlenika" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEABIAAACAACBAAAACAAAICIAQQAAAgAAAAAAAAAtA=</HashCode>
+      <FileName>frmUrediZaposlenika.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.frmZaposlenici" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAKBAAAIAAACAAIACAAD4BwAAAAAAAIAAAAA=</HashCode>
+      <FileName>frmZaposlenici.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Podatci" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQgAGE0ACAJcCAQTIAEBBSAAEAhAABAAEAAIEBEAEA=</HashCode>
+      <FileName>Podatci.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Program" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Model.tiskaraNETEntities" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABBAAgAAAQAAQAAAAAABAAAgEAAAUAEAAAAAABACAAA=</HashCode>
+      <FileName>Model\tiskaraNET.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Model.artikli" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EABAAgAAAgAgYAAAAAAAAAAAAAAAQAAACAAAQAACAAA=</HashCode>
+      <FileName>Model\artikli.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Model.izdatnica" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIgAAAAQAAAAAAAAAAAAAAAAAAAAAEAAgAAAAACAAA=</HashCode>
+      <FileName>Model\izdatnica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Model.korisnici" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJQgAAEQAAAAEKAAAAAAAAAgAAAAEAAAAAAAABAAAAA=</HashCode>
+      <FileName>Model\korisnici.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Model.narudzbenica" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAQQAACAAAQAAAAAAAAAAAQAEAAgAAAAAAAAA=</HashCode>
+      <FileName>Model\narudzbenica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Model.oprema" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAQAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\oprema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Model.poslovni_partner" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIAAAAAAAAAACIAgAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\poslovni_partner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Model.primka" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAAQAAAAAAAAAAAAAAAAAAAAAEAAgIAAAAAAAA=</HashCode>
+      <FileName>Model\primka.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Model.racun" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgBAAAQAAAQAAAAgAAAACAAAAAAAEEAgAAAIAAAAA=</HashCode>
+      <FileName>Model\racun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Model.stavke_izdatnice" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIAAAAAAgAgAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\stavke_izdatnice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Model.stavke_narudzbenice" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAgAAAAQAABAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\stavke_narudzbenice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Model.stavke_primke" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAgAAAAAAABAAAAAAAAAAAAAAIAABAAAAA=</HashCode>
+      <FileName>Model\stavke_primke.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Model.stavke_racuna" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAoAAAAAAABAACAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\stavke_racuna.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Model.vrsta_artikla" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Model\vrsta_artikla.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Properties.Resources" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PI_PROJEKT.Properties.Settings" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

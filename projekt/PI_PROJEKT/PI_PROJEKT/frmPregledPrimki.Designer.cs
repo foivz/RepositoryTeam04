@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.dgvPrimke = new System.Windows.Forms.DataGridView();
-            this.dgvStavkePrimke = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvStavkePrimke = new System.Windows.Forms.DataGridView();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrimke)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkePrimke)).BeginInit();
@@ -45,18 +45,41 @@
             // 
             // dgvPrimke
             // 
+            this.dgvPrimke.AllowUserToDeleteRows = false;
             this.dgvPrimke.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPrimke.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
             this.dgvPrimke.Location = new System.Drawing.Point(15, 35);
+            this.dgvPrimke.MultiSelect = false;
             this.dgvPrimke.Name = "dgvPrimke";
             this.dgvPrimke.ReadOnly = true;
             this.dgvPrimke.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPrimke.Size = new System.Drawing.Size(397, 150);
             this.dgvPrimke.TabIndex = 0;
             this.dgvPrimke.SelectionChanged += new System.EventHandler(this.dgvPrimke_SelectionChanged);
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column1.HeaderText = "ID primka";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 77;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Datum";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.HeaderText = "Izdao";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // dgvStavkePrimke
             // 
@@ -66,11 +89,31 @@
             this.Column4,
             this.Column6});
             this.dgvStavkePrimke.Location = new System.Drawing.Point(12, 230);
+            this.dgvStavkePrimke.MultiSelect = false;
             this.dgvStavkePrimke.Name = "dgvStavkePrimke";
             this.dgvStavkePrimke.ReadOnly = true;
             this.dgvStavkePrimke.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStavkePrimke.Size = new System.Drawing.Size(400, 150);
             this.dgvStavkePrimke.TabIndex = 1;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "ID artikla";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.HeaderText = "Naziv";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Količina";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             // 
             // label1
             // 
@@ -89,40 +132,6 @@
             this.label2.Size = new System.Drawing.Size(99, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Popis izdanih primki";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "ID artikla";
-            this.Column5.Name = "Column5";
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "Naziv";
-            this.Column4.Name = "Column4";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Količina";
-            this.Column6.Name = "Column6";
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column1.HeaderText = "ID primka";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 77;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Datum";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.HeaderText = "Izdao";
-            this.Column3.Name = "Column3";
             // 
             // button1
             // 

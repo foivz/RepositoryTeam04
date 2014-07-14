@@ -264,7 +264,7 @@
             this.Controls.Add(this.dgvNoveStavke);
             this.Controls.Add(this.btnDodajRačun);
             this.Name = "frmDodajIzdatnicu";
-            this.Text = "frmDodajIzdatnicu";
+            this.Text = "Dodaj Izdatnicu";
             this.Load += new System.EventHandler(this.frmDodajIzdatnicu_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();

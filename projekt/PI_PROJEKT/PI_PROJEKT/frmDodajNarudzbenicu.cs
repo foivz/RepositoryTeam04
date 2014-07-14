@@ -97,6 +97,7 @@ namespace PI_PROJEKT
 
             if (sve != "" && Podatci.Klik == 1) 
             {
+                Podatci.Klik = 0;
                 string[] id_evi = sve.Split('|');
                 foreach (string id in id_evi) 
                 {
@@ -153,6 +154,9 @@ namespace PI_PROJEKT
             {
                 Podatci.ID_narudzbenica = id_narudzbenice;
                 frmMail forma = new frmMail();
+                Podatci.IdPartnerMail = Convert.ToInt32(txtIDPP.Text);
+                Podatci.DtmMail = dtpDatum.Value;
+                Podatci.NazivPartnerMail = txtNaziv.Text;
                 forma.MdiParent = this.MdiParent;
                 forma.Show();  
             }
